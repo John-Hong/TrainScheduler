@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Train Schedule</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+	
+	<!-- Our Javascript -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	<!-- Moment JS -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<h1> Anytime in Train Time</h1>
+		<h2> Choo Choo. Chee Chee </h2>
+	</header>
+
+	<section>
+		<div class="section-header"> Current Train Schedule </div>
+		<div class="section-content">
+			<table id="train-schedule" class="table table-hover">
+				<thead>
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency (Min) </th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+				<tbody>	
+					<!-- This is where the data goes -->
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section>
+		<div class="section-header"> Add Train </div>
+		<div class="section-content">
+			<form id="addTrain-form" action="" method="get">
+
+				<div class="field">
+					<label for="name"> Train Name </label> <br>
+					<input type="text" name="name"> <br>
+				</div>
+
+				<div class="field">
+					<label for="dest"> Destiation </label> <br>
+					<input type="text" name="dest"> <br>
+				</div>
+
+				<div class="field">
+					<label for="initTime"> First Train Time (HH:mm - military time </label> <br>
+					<input type="text" name="initTime"> <br>
+				</div>
+
+				<div class="field">
+					<label for="freq"> Frequency (min) </label> <br>
+					<input type="text" name="freq"> <br>
+				</div>
+
+				<input type="submit" value="Submit!">
+
+			</form>
+		</div>
+	</section>
+
+</body>
+
+</html>

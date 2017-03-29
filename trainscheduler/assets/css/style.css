@@ -1,0 +1,65 @@
+
+body {
+	font: 12pt Helvetica, "sans-serif";
+}
+
+header {
+	background-color: silver;
+	text-align: center;
+	padding: 1em 0em;
+	margin-bottom: 2em;
+}
+
+header h1 {
+	font-size: 24pt;
+	font-size: normal;
+}
+
+header h2 {
+	font-size: 20pt;
+	font-size: normal;
+}
+
+section {
+	border: 1px solid black;
+	border-radius: 4px;
+	margin-bottom: 2em;
+}
+
+section .section-header {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 14pt;
+	padding: 0.5em 1em;
+}
+
+section .section-content {
+	padding: 1em 2em;
+}
+
+
+#train-schedule {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#train-schedule tr {
+	border-bottom: 1px solid silver;
+}
+
+#train-schedule td, #train-schedule th {
+	padding: 0.5em;
+	text-align: left;
+}
+
+
+#addTrain-form .field {
+	margin-bottom: 1em;
+}
+
+
+#addTrain-form label {
+	font-size: 9pt;
+	font-weight: bold;
+}
